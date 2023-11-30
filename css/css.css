@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+.body{
+    background-color: #C3B692;
+    position: -ms-page;
+}
+
+.table{
+    justify-items: center;
+    justify-content: center;
+    margin: 10px , 10px, 10px, 10px;
+}
+
+.container-fluid{
+    background-color: #0E2859;
+    width: 100%;
+    display: inline-table;
+    height: max-content;
+}
+.menu {
+    background-color: #0E2859; 
+    padding: 0;
+}
+
+.navbar-brand{
+    color: #fff; 
+    font-size: large;
+}
+.navbar-nav .nav-link {
+    color: #fff; 
+    font-size: large;
+}
+
+.navbar-brand:hover,
+.navbar-nav .nav-link:hover {
+    color: #4061f6; 
+}
+
+.navbar-toggler-icon {
+    background-color: #fff; 
+}
+
+@media (max-width: 767px) {
+    .navbar-nav {
+        background-color: #0E2859; 
+    }
+
+    .navbar-toggler-icon {
+        background-color: #fff; /* Cambia el color del icono del botón de alternar en dispositivos pequeños */
+    }
+}
+
+*{
+    margin: 10;
+    padding: 10;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.lead {
+    font-size: 1.2rem; 
+}
+
+.btn-lg {
+    margin-top: 20px; /* Espacio entre el botón y el siguiente contenido */
+}
+
+.card {
+    transition: transform 0.2s, box-shadow 0.2s; /* Agrega transiciones */
+    border: none; /* Elimina el borde de la tarjeta */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1); /* Sutil sombra al pasar el ratón sobre la tarjeta */
+}
+
+.card img {
+    border-top-left-radius: 10px; /* Esquinas redondeadas en la imagen */
+    border-top-right-radius: 10px;
+}
+
+.pie-pagina{
+    background-color: #0E2859;
+    position: -ms-page;
+    display: inline-block;
+    width: 100%;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: -ms-page;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+    border-radius: 15%;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    
+    text-decoration: none;
+    width: 80px;
+    height: 55px;
+    line-height: 45px;
+    color: #C3B692;
+    margin-right: 10px;
+  
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: #4061f6;
+}
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
